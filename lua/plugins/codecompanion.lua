@@ -10,7 +10,7 @@ return {
         return require("codecompanion.adapters").extend("openai_compatible", {
           env = {
             url = "https://openrouter.ai/api",
-            api_key = "cmd: cat .openrouter", -- optional: if your endpoint is authenticated
+            api_key = "cmd: cat ~/.config/nvim/.openrouter", -- optional: if your endpoint is authenticated
             chat_url = "/v1/chat/completions", -- optional: default value, override if different
           },
           schema = {
