@@ -25,11 +25,6 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 -- open tmux sessionizer (like a real chad)
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tms<CR>")
 
--- Toggleterm
-vim.keymap.set("n", "<C-t>", "<cmd>ToggleTerm<CR>")
-vim.keymap.set("t", "<C-t>", "<cmd>ToggleTerm<CR>")
-vim.keymap.set("t", "<esc>", [[<C-\><C-n>]]) -- Go to normal mode
-
 -- Fugitive
 vim.keymap.set("n", "<leader>gg", ":Git<CR>")
 vim.keymap.set("n", "<leader>gp", ":Git push<CR>")
