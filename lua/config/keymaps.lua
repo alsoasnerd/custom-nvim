@@ -2,18 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- Toggleterm
-vim.keymap.set("n", "<C-t>", "<cmd>ToggleTerm<CR>")
-vim.keymap.set("t", "<C-t>", "<cmd>ToggleTerm<CR>")
-vim.keymap.set("t", "<esc>", [[<C-\><C-n>]]) -- Go to normal mode
-
--- Fugitive
-vim.keymap.set("n", "<leader>gg", ":Git<CR>")
-vim.keymap.set("n", "<leader>gp", ":Git push<CR>")
-vim.keymap.set("n", "<leader>gP", ":Git pull --rebase<CR>")
-vim.keymap.set("n", "<leader>gd", ":Git diff<CR>")
-vim.keymap.set("n", "<leader>gl", ":Git log<CR>")
-
 -- delete without yanking
 vim.keymap.set("x", "<leader>P", [["_dP]])
 
@@ -49,3 +37,7 @@ vim.keymap.set("n", "<leader>gP", ":Git pull --rebase<CR>")
 vim.keymap.set("n", "<leader>gd", ":Git diff<CR>")
 vim.keymap.set("n", "<leader>gl", ":Git log<CR>")
 
+-- CodeCompanion
+vim.keymap.set("n", "<leader>at", ":CodeCompanionChat<CR>")
+vim.keymap.set("v", "<leader>am", ":CodeCompanionActions<CR>")
+vim.keymap.set("n", "<leader>ac", ":CodeCompanionCmd")
